@@ -1,0 +1,19 @@
+<template>
+  <require from="components/react-element"></require>
+  <require from="./modules/nav/nav-bar.html"></require>
+  
+  <nav-bar router.bind="router"></nav-bar>
+
+  <div class="page-host">
+    <router-view></router-view>
+  </div>
+   <div style="margin-top:400px;">
+  <h1>This is the homepage</h1>
+  <h2>Let's render a React component</h2>
+  
+  <!-- Our custom element and data passed through to the bindable -->
+  <react-element data.bind="someData"></react-element>
+  </div>
+
+
+</template>

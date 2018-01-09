@@ -1,0 +1,11 @@
+.*
+src/
+test/
+doc/
+Dockerfile
+node_modules/
+locale/
+doc/
+assets/
+utils/
+styles/
