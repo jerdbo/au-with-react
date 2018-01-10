@@ -1,6 +1,7 @@
 <template>
   <require from="components/react-element"></require>
   <require from="./modules/nav/nav-bar.html"></require>
+  <require from="./components/d3/example"></require>
   
   <nav-bar router.bind="router"></nav-bar>
 
@@ -13,6 +14,7 @@
   
   <!-- Our custom element and data passed through to the bindable -->
   <react-element data.bind="someData"></react-element>
+  <my-d3></my-d3>
   </div>
 
 
