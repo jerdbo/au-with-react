@@ -1,9 +1,13 @@
 import * as d3 from "d3";
+import { inlineView, injec } from "aurelia-framework";
 
+@inlineView(`<template>
+  this is from d3
+  <canvas ref="canvas" click.trigger="render()" width="960" height="500"></canvas>
+</template>`)
 export class myD3 {
   canvas; context; width; height; color; randomX; randomY;
   attached() {
-    this.canvas = document.querySelector("canvas");
     this.context = this.canvas.getContext("2d");
     this.width = this.canvas.width;
     this.height = this.canvas.height;
